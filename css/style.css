@@ -183,32 +183,6 @@ nav.main-nav a.active {
 }
 .hero-visual img { width: 100%; border-radius: 10px; display: block; }
 
-.day-night-compare {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.dn-panel {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  line-height: 0;
-}
-.dn-panel img { width: 100%; display: block; }
-.dn-label {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  line-height: 1.4;
-  font-size: 0.78rem;
-  font-weight: 700;
-  padding: 6px 12px;
-  border-radius: 999px;
-  letter-spacing: 0.02em;
-}
-.dn-label-day { background: var(--lime); color: var(--navy); }
-.dn-label-night { background: rgba(255,255,255,0.12); color: var(--white); border: 1px solid rgba(255,255,255,0.25); backdrop-filter: blur(4px); }
-
 .btn {
   display: inline-block;
   padding: 14px 28px;
@@ -238,48 +212,6 @@ nav.main-nav a.active {
 .btn-dark:hover { background: #2a2c5e; }
 
 .btn-row { margin-top: 30px; }
-
-/* How it works strip, directly under the hero for immediate clarity */
-.how-strip {
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
-}
-.how-strip-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  padding: 20px 24px;
-  text-align: center;
-}
-.how-step {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--navy);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.how-num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--lime);
-  color: var(--navy);
-  font-family: 'Arsenal', serif;
-  font-weight: 700;
-  font-size: 0.8rem;
-  flex-shrink: 0;
-}
-.how-arrow { color: var(--blue); font-weight: 700; }
-@media (max-width: 700px) {
-  .how-arrow { display: none; }
-  .how-strip-inner { flex-direction: column; align-items: flex-start; }
-}
 
 /* Sections */
 section { padding: 80px 0; position: relative; }

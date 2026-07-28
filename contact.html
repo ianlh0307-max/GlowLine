@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Request a Quote | GlowLine</title>
+<meta name="description" content="Contact GlowLine or request a hospital quote for photoluminescent medical wire wraps.">
+<link rel="icon" href="images/mark-color.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo-link"><img src="images/logo-black.png" alt="GlowLine — Redefining Care"></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html#quote" class="nav-cta">Request a Quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero dots-corner tr dots-on-navy">
+  <img class="mark-watermark" src="images/mark-color.png" alt="" style="width:360px; top:-50px; left:-30px; filter:brightness(0) invert(1);">
+  <div class="container">
+    <img class="eyebrow-mark" src="images/mark-color.png" alt="" style="filter:brightness(0) invert(1);">
+    <span style="color:var(--lime); text-transform:uppercase; letter-spacing:0.12em; font-weight:700; font-size:0.8rem;">Contact</span>
+    <h1>Let's talk about your facility</h1>
+    <p>Reach out with questions, or fill out the form below and our team will follow up with a tailored quote for your hospital.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-info-grid">
+      <div class="card contact-info-card">
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:info@glowline.com">info@glowline.com</a></div>
+      </div>
+      <div class="card contact-info-card">
+        <div class="label">Phone</div>
+        <div class="value"><a href="tel:+15550100">(555) 010-0100</a></div>
+      </div>
+      <div class="card contact-info-card">
+        <div class="label">Instagram</div>
+        <div class="value"><a href="https://instagram.com/GLOWLINEcares" target="_blank" rel="noopener">@GLOWLINEcares</a></div>
+      </div>
+    </div>
+
+    <div id="quote"></div>
+    <div class="grid-2" style="align-items:start;">
+      <div class="form-wrap">
+        <h2>Request a Quote</h2>
+        <p style="color:var(--muted); margin-bottom:24px;">Tell us a bit about your facility and needs. GlowLine wraps are sold in packs of 5, with hospitals outfitting an average of 130 rooms.</p>
+
+        <form action="https://formsubmit.co/info@glowline.com" method="POST">
+          <input type="hidden" name="_subject" value="New GlowLine Quote Request">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="field">
+              <label for="title">Title / Role</label>
+              <input type="text" id="title" name="Title" placeholder="e.g. Nurse Manager, Procurement Lead">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="hospital">Hospital / Facility Name</label>
+              <input type="text" id="hospital" name="Hospital" required>
+            </div>
+            <div class="field">
+              <label for="location">City / State</label>
+              <input type="text" id="location" name="Location">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="Phone">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="rooms">Approx. Number of Rooms</label>
+              <input type="number" id="rooms" name="Approx Rooms" min="1" placeholder="e.g. 130">
+            </div>
+            <div class="field">
+              <label for="wiretype">Line Types of Interest</label>
+              <select id="wiretype" name="Line Types">
+                <option value="">Select an option</option>
+                <option>IV Tubing</option>
+                <option>ECG Cable</option>
+                <option>Ventilator Tubing</option>
+                <option>Monitoring Wires</option>
+                <option>All of the above</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Additional Details</label>
+            <textarea id="message" name="Message" placeholder="Tell us about your timeline, units, or any specific requirements."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark form-submit">Submit Quote Request</button>
+          <p class="form-note">We typically respond within 2 business days. No purchase or commitment required to request a quote.</p>
+        </form>
+      </div>
+
+      <div>
+        <h2>What happens next?</h2>
+        <div class="card" style="margin-bottom:18px;">
+          <h3>1. We review your request</h3>
+          <p>Our team looks at your facility size and line-type needs to prepare an accurate quote.</p>
+        </div>
+        <div class="card" style="margin-bottom:18px;">
+          <h3>2. We follow up</h3>
+          <p>Expect a call or email within 2 business days to confirm details and answer any questions.</p>
+        </div>
+        <div class="card">
+          <h3>3. You receive a tailored quote</h3>
+          <p>Pricing is based on packs of 5 wraps at a $75 retail price point, scaled to your room count.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo-color.png" alt="GlowLine">
+        <p style="max-width:280px; color:#c7cae6;">Photoluminescent wire wraps that redefine overnight patient care.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@glowline.com">info@glowline.com</a></li>
+          <li><a href="tel:+15550100">(555) 010-0100</a></li>
+          <li><a href="https://instagram.com/GLOWLINEcares" target="_blank" rel="noopener">@GLOWLINEcares</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GlowLine. All rights reserved.</span>
+      <span>Redefining Care</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

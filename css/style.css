@@ -352,9 +352,9 @@ table.compare tbody tr:last-child td { border-bottom: none; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(186,255,41,0.14);
-  color: var(--lime);
-  border: 1px solid rgba(186,255,41,0.3);
+  background: var(--mint);
+  color: var(--navy);
+  border: 1px solid rgba(26,27,65,0.12);
   padding: 8px 16px;
   border-radius: 999px;
   font-weight: 700;

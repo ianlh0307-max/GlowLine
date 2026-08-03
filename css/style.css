@@ -236,7 +236,8 @@ section { padding: 88px 0; position: relative; overflow: hidden; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  padding: 12px 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .stat-num {
   font-family: var(--font-head);

@@ -6,13 +6,13 @@
 <title>GlowLine | Glow-in-the-Dark Medical Wire Wraps for Hospitals</title>
 <meta name="description" content="GlowLine's photoluminescent wire wraps help nursing staff identify IV lines, ECG cables, ventilator tubing, and monitoring wires instantly in dark patient rooms — no extra light required.">
 <link rel="icon" href="images/mark-color.png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="logo-link"><img src="images/logo-black.png" alt="GlowLine — Redefining Care"></a>
+    <a href="index.html" class="logo-link"><img src="images/logo-header.png" alt="GlowLine"></a>
     <nav class="main-nav">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -22,11 +22,11 @@
         <li><a href="contact.html#quote" class="nav-cta">Request a Quote</a></li>
       </ul>
     </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <section class="hero dots-corner tr dots-on-navy">
-  <img class="mark-watermark" src="images/mark-color.png" alt="" style="width:420px; top:-60px; right:-40px; filter:brightness(0) invert(1);">
   <div class="container">
     <div>
       <span class="eyebrow">Redefining Care</span>
@@ -38,7 +38,12 @@
       </div>
     </div>
     <div class="hero-visual">
-      <img src="images/product-lines.png" alt="GlowLine wraps on IV tubing, ECG cable, ventilator tubing, and monitoring wires">
+      <img class="img-day" src="images/product-lines.jpg" alt="GlowLine wraps on IV tubing, ECG cable, ventilator tubing, and monitoring wires">
+      <img class="img-night" src="images/product-night.jpg" alt="GlowLine wrap glowing in a dark patient room, connected to a cardiac monitor">
+      <div class="hero-toggle">
+        <button class="btn-day active" type="button">Day</button>
+        <button class="btn-night" type="button">Night</button>
+      </div>
     </div>
   </div>
 </section>
@@ -50,8 +55,8 @@
       <div class="stat-label">nurses report difficulty identifying medical wires in dark patient rooms</div>
     </div>
     <div>
-      <div class="stat-num">$2B</div>
-      <div class="stat-label">global market for overnight healthcare facility solutions</div>
+      <div class="stat-num">4</div>
+      <div class="stat-label">line types covered — IV, ECG, ventilator, and monitoring wires</div>
     </div>
     <div>
       <div class="stat-num">25+</div>
@@ -60,52 +65,28 @@
   </div>
 </section>
 
-<section class="section-blob">
+<section class="dots-corner br dots-on-light">
   <div class="container">
     <div class="section-head">
-      <img class="eyebrow-mark" src="images/mark-color.png" alt="">
-      <span class="eyebrow">The Problem</span>
+      <span class="eyebrow" style="color:var(--blue);">The Problem</span>
       <h2>Dark rooms make line identification a safety risk</h2>
       <p>Nurses routinely face a difficult choice overnight: turn on the lights and disrupt patient sleep and recovery, or work in the dark and risk misidentifying a critical line during an emergency. Existing options — flashlights, neon tape, ambient night-lights — don't solve the underlying problem.</p>
     </div>
     <div class="grid-3">
       <div class="card">
-        <div class="icon-badge">💡</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 2Z"/></svg></div>
         <h3>Lights Turn On</h3>
         <p>Overhead lighting is the default workaround, but it disrupts patients trying to rest and recover.</p>
       </div>
       <div class="card">
-        <div class="icon-badge">😴</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></div>
         <h3>Disrupts Sleep</h3>
         <p>Interrupted sleep cycles are directly linked to slower patient recovery times.</p>
       </div>
       <div class="card">
-        <div class="icon-badge">⏱️</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
         <h3>Slows Down Care</h3>
         <p>Every extra second spent identifying the correct line in an emergency matters.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-alt dots-corner br dots-on-light">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Market Size</span>
-      <h2>A large, underserved market <span style="font-weight:400; font-size:0.6em; color:var(--muted);">(overnight healthcare facilities)</span></h2>
-    </div>
-    <div class="market-venn">
-      <div class="venn-circle venn-global">
-        <span class="venn-label">Global</span>
-        <span class="venn-num">$2B</span>
-      </div>
-      <div class="venn-circle venn-eastern">
-        <span class="venn-label">Eastern USA</span>
-        <span class="venn-num">$38M</span>
-      </div>
-      <div class="venn-circle venn-central">
-        <span class="venn-label">Central KY</span>
-        <span class="venn-num">$150K</span>
       </div>
     </div>
   </div>
@@ -118,73 +99,73 @@
       <h2>Glow-in-the-dark wire wraps, engineered for clinical use</h2>
       <p>GlowLine's spiral silicone wraps slide over existing hospital wires and tubing — no new equipment, no retraining. They absorb ambient light during the day and glow through the night, giving nurses instant visual and tactile identification without switching on a single light.</p>
       <div class="wire-legend">
-        <span class="wire-chip"><span class="wire-dot" style="background:#7ee34d;"></span>IV Tubing</span>
-        <span class="wire-chip"><span class="wire-dot" style="background:#ff3d9a;"></span>ECG Cable</span>
-        <span class="wire-chip"><span class="wire-dot" style="background:#2fc2ff;"></span>Ventilator Tubing</span>
-        <span class="wire-chip"><span class="wire-dot" style="background:#ff8a2b;"></span>Monitoring Wires</span>
+        <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-iv);"></span>IV Tubing</span>
+        <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-ecg);"></span>ECG Cable</span>
+        <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-vent);"></span>Ventilator Tubing</span>
+        <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-mon);"></span>Monitoring Wires</span>
       </div>
       <div class="btn-row">
         <a href="product.html" class="btn btn-dark">Explore the Product</a>
       </div>
     </div>
     <div>
-      <img src="images/product-lines.png" alt="GlowLine glow-in-the-dark wire wraps by line type" style="width:100%; border-radius:12px; border:1px solid var(--border);">
+      <img src="images/product-lines.jpg" alt="GlowLine glow-in-the-dark wire wraps by line type" style="width:100%; border-radius:14px; border:1px solid var(--border);">
     </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <div class="section-head">
-      <img class="eyebrow-mark" src="images/mark-color.png" alt="">
-      <span class="eyebrow">Why Hospitals Choose GlowLine</span>
+    <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow" style="color:var(--blue);">Why Hospitals Choose GlowLine</span>
       <h2>Safe. Durable. Versatile.</h2>
     </div>
-    <table class="compare">
-      <thead>
-        <tr>
-          <th>Feature</th>
-          <th class="glowline-col">GlowLine</th>
-          <th>Lightengale</th>
-          <th>Flashlights</th>
-          <th>Neon Tape</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Safe for clinical use</td>
-          <td class="glowline-col"><span class="yes">✓</span></td>
-          <td><span class="yes">✓</span></td>
-          <td><span class="no">✕</span></td>
-          <td><span class="no">✕</span></td>
-        </tr>
-        <tr>
-          <td>Durable</td>
-          <td class="glowline-col"><span class="yes">✓</span></td>
-          <td><span class="no">✕</span></td>
-          <td><span class="yes">✓</span></td>
-          <td><span class="no">✕</span></td>
-        </tr>
-        <tr>
-          <td>Versatile across line types</td>
-          <td class="glowline-col"><span class="yes">✓</span></td>
-          <td><span class="no">✕</span></td>
-          <td><span class="no">✕</span></td>
-          <td><span class="no">✕</span></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="glowline-col">GlowLine</th>
+            <th>Lightengale</th>
+            <th>Flashlights</th>
+            <th>Neon Tape</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Safe for clinical use</td>
+            <td class="glowline-col"><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="no">✕</span></td>
+            <td><span class="no">✕</span></td>
+          </tr>
+          <tr>
+            <td>Durable</td>
+            <td class="glowline-col"><span class="yes">✓</span></td>
+            <td><span class="no">✕</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="no">✕</span></td>
+          </tr>
+          <tr>
+            <td>Versatile across line types</td>
+            <td class="glowline-col"><span class="yes">✓</span></td>
+            <td><span class="no">✕</span></td>
+            <td><span class="no">✕</span></td>
+            <td><span class="no">✕</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
 <section class="section-navy dots-corner tr dots-on-navy">
   <div class="container">
     <div class="section-head">
-      <img class="eyebrow-mark" src="images/mark-color.png" alt="" style="filter:brightness(0) invert(1);">
-      <span class="eyebrow" style="color:var(--lime);">From the Field</span>
+      <span class="eyebrow">From the Field</span>
       <h2>What clinicians are telling us</h2>
     </div>
-    <div class="grid-2">
+    <div class="grid-2" style="align-items:stretch;">
       <div class="quote-card">
         <p class="quote-text">"I agree that we do have to turn on the lights, and there is not an existing solution for that."</p>
         <p class="quote-attr">— Shannon Buckner, Healthcare Professional</p>
@@ -209,7 +190,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <img src="images/logo-color.png" alt="GlowLine">
+        <img src="images/logo-footer.png" alt="GlowLine">
         <p style="max-width:280px; color:#c7cae6;">Photoluminescent wire wraps that redefine overnight patient care.</p>
       </div>
       <div>
@@ -237,5 +218,6 @@
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>

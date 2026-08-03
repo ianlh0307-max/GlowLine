@@ -6,13 +6,13 @@
 <title>Contact &amp; Request a Quote | GlowLine</title>
 <meta name="description" content="Contact GlowLine or request a hospital quote for photoluminescent medical wire wraps.">
 <link rel="icon" href="images/mark-color.png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="logo-link"><img src="images/logo-black.png" alt="GlowLine — Redefining Care"></a>
+    <a href="index.html" class="logo-link"><img src="images/logo-header.png" alt="GlowLine"></a>
     <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -22,14 +22,13 @@
         <li><a href="contact.html#quote" class="nav-cta">Request a Quote</a></li>
       </ul>
     </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <section class="page-hero dots-corner tr dots-on-navy">
-  <img class="mark-watermark" src="images/mark-color.png" alt="" style="width:360px; top:-50px; left:-30px; filter:brightness(0) invert(1);">
   <div class="container">
-    <img class="eyebrow-mark" src="images/mark-color.png" alt="" style="filter:brightness(0) invert(1);">
-    <span style="color:var(--lime); text-transform:uppercase; letter-spacing:0.12em; font-weight:700; font-size:0.8rem;">Contact</span>
+    <span class="eyebrow">Contact</span>
     <h1>Let's talk about your facility</h1>
     <p>Reach out with questions, or fill out the form below and our team will follow up with a tailored quote for your hospital.</p>
   </div>
@@ -58,10 +57,19 @@
         <h2>Request a Quote</h2>
         <p style="color:var(--muted); margin-bottom:24px;">Tell us a bit about your facility and needs. GlowLine wraps are sold in packs of 5, with hospitals outfitting an average of 130 rooms.</p>
 
+        <!--
+          FORM SETUP: this form posts to FormSubmit.co, a free email-forwarding
+          service that needs NO account — just a real inbox.
+          1. Replace "info@glowline.com" below with your real business email.
+          2. Submit the form once from the live site; FormSubmit will email
+             that address an activation link — click it to start receiving
+             submissions. (Docs: https://formsubmit.co)
+        -->
         <form action="https://formsubmit.co/info@glowline.com" method="POST">
           <input type="hidden" name="_subject" value="New GlowLine Quote Request">
           <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
           <div class="form-row">
             <div class="field">
@@ -96,21 +104,18 @@
             </div>
           </div>
 
-          <div class="form-row">
-            <div class="field">
-              <label for="rooms">Approx. Number of Rooms</label>
-              <input type="number" id="rooms" name="Approx Rooms" min="1" placeholder="e.g. 130">
-            </div>
-            <div class="field">
-              <label for="wiretype">Line Types of Interest</label>
-              <select id="wiretype" name="Line Types">
-                <option value="">Select an option</option>
-                <option>IV Tubing</option>
-                <option>ECG Cable</option>
-                <option>Ventilator Tubing</option>
-                <option>Monitoring Wires</option>
-                <option>All of the above</option>
-              </select>
+          <div class="field">
+            <label for="rooms">Approx. Number of Rooms</label>
+            <input type="number" id="rooms" name="Approx Rooms" min="1" placeholder="e.g. 130">
+          </div>
+
+          <div class="field">
+            <label>Line Types of Interest</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="Line Types" value="IV Tubing"> IV Tubing</label>
+              <label><input type="checkbox" name="Line Types" value="ECG Cable"> ECG Cable</label>
+              <label><input type="checkbox" name="Line Types" value="Ventilator Tubing"> Ventilator Tubing</label>
+              <label><input type="checkbox" name="Line Types" value="Monitoring Wires"> Monitoring Wires</label>
             </div>
           </div>
 
@@ -147,7 +152,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <img src="images/logo-color.png" alt="GlowLine">
+        <img src="images/logo-footer.png" alt="GlowLine">
         <p style="max-width:280px; color:#c7cae6;">Photoluminescent wire wraps that redefine overnight patient care.</p>
       </div>
       <div>
@@ -175,5 +180,6 @@
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -6,13 +6,13 @@
 <title>Product | GlowLine</title>
 <meta name="description" content="How GlowLine's photoluminescent wire wraps work, the line types they cover, and the clinical-grade materials behind them.">
 <link rel="icon" href="images/mark-color.png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="logo-link"><img src="images/logo-black.png" alt="GlowLine — Redefining Care"></a>
+    <a href="index.html" class="logo-link"><img src="images/logo-header.png" alt="GlowLine"></a>
     <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -22,14 +22,13 @@
         <li><a href="contact.html#quote" class="nav-cta">Request a Quote</a></li>
       </ul>
     </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <section class="page-hero dots-corner tr dots-on-navy">
-  <img class="mark-watermark" src="images/mark-color.png" alt="" style="width:360px; top:-50px; left:-30px; filter:brightness(0) invert(1);">
   <div class="container">
-    <img class="eyebrow-mark" src="images/mark-color.png" alt="" style="filter:brightness(0) invert(1);">
-    <span class="eyebrow" style="color:var(--lime); text-transform:uppercase; letter-spacing:0.12em; font-weight:700; font-size:0.8rem;">Our Product</span>
+    <span class="eyebrow">Our Product</span>
     <h1>Glow-in-the-dark wraps for every line in the room</h1>
     <p>Clinical-grade, photoluminescent silicone wraps that slide over existing medical wires and tubing — engineered for visibility, durability, and safety.</p>
   </div>
@@ -38,16 +37,16 @@
 <section>
   <div class="container grid-2">
     <div>
-      <img src="images/product-lines.png" alt="GlowLine wraps installed on IV tubing, ECG cable, ventilator tubing, and monitoring wires" style="width:100%; border-radius:12px; border:1px solid var(--border);">
+      <img src="images/product-lines.jpg" alt="GlowLine wraps installed on IV tubing, ECG cable, ventilator tubing, and monitoring wires" style="width:100%; border-radius:14px; border:1px solid var(--border);">
     </div>
     <div>
       <h2>One product, four line types</h2>
       <p>Each GlowLine wrap is color- and texture-coded to a specific line type, so clinicians can identify a line by sight or by touch — even in complete darkness or during high-stress, low-visibility triage.</p>
       <div class="wire-legend">
-        <span class="wire-chip"><span class="wire-dot" style="background:#7ee34d;"></span>IV Tubing</span>
-        <span class="wire-chip"><span class="wire-dot" style="background:#ff3d9a;"></span>ECG Cable</span>
-        <span class="wire-chip"><span class="wire-dot" style="background:#2fc2ff;"></span>Ventilator Tubing</span>
-        <span class="wire-chip"><span class="wire-dot" style="background:#ff8a2b;"></span>Monitoring Wires</span>
+        <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-iv);"></span>IV Tubing</span>
+        <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-ecg);"></span>ECG Cable</span>
+        <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-vent);"></span>Ventilator Tubing</span>
+        <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-mon);"></span>Monitoring Wires</span>
       </div>
     </div>
   </div>
@@ -55,24 +54,23 @@
 
 <section class="section-alt">
   <div class="container">
-    <div class="section-head">
-      <img class="eyebrow-mark" src="images/mark-color.png" alt="">
-      <span class="eyebrow">Why It Works</span>
+    <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow" style="color:var(--blue);">Why It Works</span>
       <h2>Absorb. Glow. Identify.</h2>
     </div>
     <div class="grid-3">
       <div class="card">
-        <div class="icon-badge">☀️</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
         <h3>Absorb Light</h3>
         <p>The phosphor-infused material charges naturally under ambient room light throughout the day — no batteries, no charging stations.</p>
       </div>
       <div class="card">
-        <div class="icon-badge">🌙</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg></div>
         <h3>Glow at Night</h3>
         <p>Once the lights go down, wraps emit a steady glow for hours, lasting through a full overnight shift.</p>
       </div>
       <div class="card">
-        <div class="icon-badge">🔎</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
         <h3>Faster Identification</h3>
         <p>Color-coded, texture-coded wraps let nurses confirm a line visually or by touch in seconds.</p>
       </div>
@@ -83,40 +81,38 @@
 <section>
   <div class="container">
     <div class="section-head">
-      <img class="eyebrow-mark" src="images/mark-color.png" alt="">
-      <span class="eyebrow">How It's Made</span>
+      <span class="eyebrow" style="color:var(--blue);">How It's Made</span>
       <h2>From liquid polymer to finished wrap</h2>
       <p>Each wrap is cast and spiral-cut in-house from a flexible, clinical-grade phosphor silicone blend, then fitted around a stainless steel mandrel to form a reusable spiral that wraps around existing lines without any adhesive.</p>
     </div>
-    <img src="images/manufacturing-steps.png" alt="GlowLine manufacturing process: filling the tube, inserting the mandrel, spiral cutting, and the finished glow wire" style="width:100%; border-radius:12px; border:1px solid var(--border);">
+    <img src="images/manufacturing-steps.jpg" alt="GlowLine manufacturing process: filling the tube, inserting the mandrel, spiral cutting, and the finished glow wire" style="width:100%; border-radius:14px; border:1px solid var(--border);">
   </div>
 </section>
 
 <section class="section-alt">
   <div class="container">
     <div class="section-head">
-      <img class="eyebrow-mark" src="images/mark-color.png" alt="">
-      <span class="eyebrow">Built for Clinical Environments</span>
+      <span class="eyebrow" style="color:var(--blue);">Built for Clinical Environments</span>
       <h2>Safety, durability, and versatility by design</h2>
     </div>
     <div class="grid-4">
       <div class="card">
-        <div class="icon-badge">✨</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div>
         <h3>Glow</h3>
         <p>Maximum photoluminescent visibility engineered for zero-light clinical environments.</p>
       </div>
       <div class="card">
-        <div class="icon-badge">🎨</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18 4.5 4.5 0 0 0 0-9 4.5 4.5 0 0 1 0-9Z"/></svg></div>
         <h3>Color</h3>
         <p>Rapid recognition through standardized medical color-coding protocols.</p>
       </div>
       <div class="card">
-        <div class="icon-badge">🖐️</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12V6a2 2 0 1 1 4 0v5M13 6a2 2 0 1 1 4 0v6M17 9a2 2 0 1 1 4 0v5c0 3.9-3.1 7-7 7h-1c-2.4 0-4-.9-5.3-2.8L5 14.7c-.6-.9-.4-2 .5-2.6.8-.5 1.8-.3 2.4.4L9 14"/></svg></div>
         <h3>Touch</h3>
         <p>Engineered tactile patterns for non-visual identification during high-stress bedside setups.</p>
       </div>
       <div class="card">
-        <div class="icon-badge">🛡️</div>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
         <h3>Safety</h3>
         <p>Clinical-grade materials designed to wrap around existing medical lines to professional safety standards.</p>
       </div>
@@ -136,7 +132,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <img src="images/logo-color.png" alt="GlowLine">
+        <img src="images/logo-footer.png" alt="GlowLine">
         <p style="max-width:280px; color:#c7cae6;">Photoluminescent wire wraps that redefine overnight patient care.</p>
       </div>
       <div>
@@ -164,5 +160,6 @@
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>

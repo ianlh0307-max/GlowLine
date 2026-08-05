@@ -208,15 +208,6 @@ section { padding: 88px 0; position: relative; overflow: hidden; }
 .hero .lead { color: #c7cae6; font-size: 1.15rem; max-width: 420px; margin-bottom: 8px; }
 .hero .btn-row { margin-top: 36px; }
 
-.hero-fill {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  pointer-events: none;
-}
-.hero-fill img { width: 88%; opacity: 0.4; }
-
 /* ============================================
    Stat strip
    ============================================ */
@@ -236,6 +227,14 @@ section { padding: 88px 0; position: relative; overflow: hidden; }
   margin-bottom: 10px;
 }
 .stat-label { color: #c7cae6; font-size: 0.92rem; max-width: 260px; }
+.stat-strip-light {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 0;
+  margin-bottom: 32px;
+}
+.stat-strip-light .stat-num { color: var(--navy); }
+.stat-strip-light .stat-label { color: var(--muted); }
 
 /* ============================================
    Section headers
@@ -255,18 +254,7 @@ section { padding: 88px 0; position: relative; overflow: hidden; }
   margin-bottom: 16px;
 }
 
-.problem-stat {
-  font-family: var(--font-head);
-  font-size: 1.25rem;
-  color: var(--navy);
-  background: var(--pale);
-  border: 1px solid rgba(26,27,65,0.08);
-  border-radius: 12px;
-  padding: 16px 20px;
-  margin-bottom: 20px;
-  max-width: 560px;
-}
-.problem-stat-num { color: var(--navy); font-weight: 700; margin-right: 6px; border-bottom: 3px solid var(--lime); }
+.section-lead { max-width: 680px; margin-bottom: 8px; }
 
 /* ============================================
    Grids & cards

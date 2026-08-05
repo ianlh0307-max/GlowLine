@@ -58,12 +58,6 @@ function init(mount) {
   controls.enablePan = false;
   controls.minDistance = 4.5;
   controls.maxDistance = 14;
-  // Keep the camera off the curve's long axis — a straight end-on view
-  // through the coil reads as a meaningless funnel shape, not a wire.
-  controls.minAzimuthAngle = -Math.PI * 0.4;
-  controls.maxAzimuthAngle = Math.PI * 0.4;
-  controls.minPolarAngle = Math.PI * 0.3;
-  controls.maxPolarAngle = Math.PI * 0.68;
   controls.autoRotate = true;
   controls.autoRotateSpeed = 0.8;
   controls.target.set(0, 0, 0);

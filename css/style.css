@@ -266,7 +266,7 @@ section { padding: 88px 0; position: relative; overflow: hidden; }
   margin-bottom: 16px;
 }
 
-.section-lead { max-width: 680px; margin-bottom: 8px; }
+.section-lead { max-width: 680px; margin-bottom: 40px; }
 
 /* ============================================
    Grids & cards

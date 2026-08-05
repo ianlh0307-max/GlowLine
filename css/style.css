@@ -409,6 +409,78 @@ table.compare tbody tr:last-child td { border-bottom: none; }
 .pricing-figure { font-family: var(--font-head); font-weight: 700; font-size: 1.3em; }
 
 /* ============================================
+   3D wire viewer
+   ============================================ */
+.wire3d {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(26,27,65,0.25);
+  background: #14152f;
+}
+.wire3d-canvas-wrap { width: 100%; height: 520px; cursor: grab; }
+.wire3d-canvas-wrap:active { cursor: grabbing; }
+.wire3d-canvas-wrap canvas { display: block; width: 100% !important; height: 100% !important; }
+.wire3d-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c7cae6;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #14152f;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.wire3d-loading.is-hidden { opacity: 0; }
+.wire3d-fallback {
+  padding: 60px 32px;
+  text-align: center;
+  color: #c7cae6;
+  font-size: 0.95rem;
+}
+.wire3d-hint {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: rgba(26,27,65,0.75);
+  color: #c7cae6;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.wire3d-hint.is-visible { opacity: 1; }
+.wire3d-reset {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  border: none;
+  background: rgba(26,27,65,0.75);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+.wire3d-reset:hover { background: var(--navy-soft); }
+@media (max-width: 900px) {
+  .wire3d-canvas-wrap { height: 380px; }
+}
+@media (max-width: 480px) {
+  .wire3d-hint { display: none; }
+}
+
+/* ============================================
    Team page
    ============================================ */
 .team-grid {

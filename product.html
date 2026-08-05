@@ -6,7 +6,7 @@
 <title>Product | GlowLine</title>
 <meta name="description" content="How GlowLine's photoluminescent wire wraps work, the line types they cover, and the clinical-grade materials behind them.">
 <link rel="icon" href="images/mark-color.png">
-<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 
@@ -48,6 +48,22 @@
         <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-vent);"></span>Ventilator Tubing</span>
         <span class="wire-chip"><span class="wire-dot" style="background:var(--wire-mon);"></span>Monitoring Wires</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-navy">
+  <div class="container">
+    <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow" style="color:var(--lime);">Explore</span>
+      <h2>See the wrap in 3D</h2>
+      <p style="margin-left:auto;margin-right:auto;">The grey core is the existing medical cable already in your hospital. The glowing green coil is GlowLine — drag to rotate, scroll to zoom, and look at it from every angle.</p>
+    </div>
+    <div class="wire3d" id="wire3d-canvas">
+      <div class="wire3d-canvas-wrap"></div>
+      <div class="wire3d-loading">Loading 3D model…</div>
+      <div class="wire3d-hint">Drag to rotate &middot; Scroll to zoom</div>
+      <button type="button" class="wire3d-reset">Reset View</button>
     </div>
   </div>
 </section>
@@ -161,5 +177,14 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="js/wire-3d.js?v=5"></script>
 </body>
 </html>

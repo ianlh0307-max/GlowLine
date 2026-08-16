@@ -204,7 +204,7 @@ section { padding: 88px 0; position: relative; overflow: hidden; }
   font-size: 0.78rem;
   margin-bottom: 20px;
 }
-.hero h1 { color: var(--white); margin-bottom: 24px; text-shadow: 0 2px 24px rgba(0,0,0,0.35); font-size: clamp(2.8rem, 6vw, 5rem); }
+.hero h1 { color: var(--white); margin-bottom: 24px; text-shadow: 0 2px 24px rgba(0,0,0,0.35); font-size: clamp(2.8rem, 6vw, 5rem); white-space: nowrap; }
 .hero .lead { color: #c7cae6; font-size: 1.15rem; max-width: 420px; margin-bottom: 8px; }
 .hero .btn-row { margin-top: 36px; }
 
@@ -605,6 +605,7 @@ table.compare tbody tr:last-child td { border-bottom: none; }
   .hero-grid, .grid-2 { grid-template-columns: 1fr; }
   .hero-bg { height: 300px; }
   .hero-grid { padding-top: 180px; }
+  .hero h1 { white-space: normal; }
   .stat-strip { grid-template-columns: 1fr; gap: 28px; }
   .grid-3, .grid-4, .solution-strip { grid-template-columns: 1fr 1fr; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }

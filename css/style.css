@@ -204,7 +204,7 @@ section { padding: 88px 0; position: relative; overflow: hidden; }
   font-size: 0.78rem;
   margin-bottom: 20px;
 }
-.hero h1 { color: var(--white); margin-bottom: 24px; text-shadow: 0 2px 24px rgba(0,0,0,0.35); }
+.hero h1 { color: var(--white); margin-bottom: 24px; text-shadow: 0 2px 24px rgba(0,0,0,0.35); font-size: clamp(2.8rem, 6vw, 5rem); }
 .hero .lead { color: #c7cae6; font-size: 1.15rem; max-width: 420px; margin-bottom: 8px; }
 .hero .btn-row { margin-top: 36px; }
 

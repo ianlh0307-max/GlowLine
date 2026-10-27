@@ -16,8 +16,8 @@ images/         Logos, team photos, product photos (see Brand Identity folder fo
 
 ## Before going live
 
-1. **Quote form email** — `contact.html` posts to [FormSubmit.co](https://formsubmit.co), a free form-to-email service that needs no account. Replace `info@glowline.com` in the form's `action` attribute with your real inbox. Submit the form once from the live site and FormSubmit will email that address an activation link — click it to start receiving submissions.
-2. **Contact info** — swap the placeholder email, phone, and Instagram handle (search for `info@glowline.com`, `(555) 010-0100`, `GLOWLINEcares` across the HTML files).
+1. **Quote form email** — `contact.html` posts to [FormSubmit.co](https://formsubmit.co), a free form-to-email service that needs no account. It sends to `glowlinecares@gmail.com`. Submit the form once from the live site and FormSubmit will email that address an activation link — click it to start receiving submissions.
+2. **Contact info** — confirm the Instagram handle (search for `GLOWLINEcares` across the HTML files).
 3. **Domain** — if you buy a real domain, point it at GitHub Pages (see below) or your host of choice.
 
 ## Preview locally

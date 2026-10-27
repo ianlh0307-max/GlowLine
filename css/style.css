@@ -536,7 +536,7 @@ table.compare tbody tr:last-child td { border-bottom: none; }
 /* ============================================
    Contact page
    ============================================ */
-.contact-info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 56px; }
+.contact-info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 56px; }
 .contact-info-card { text-align: center; }
 .contact-info-card .label {
   text-transform: uppercase;

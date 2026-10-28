@@ -488,7 +488,9 @@ table.compare tbody tr:last-child td { border-bottom: none; }
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 28px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .team-card { text-align: center; }
 .team-photo-frame {

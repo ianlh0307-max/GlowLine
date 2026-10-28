@@ -590,7 +590,7 @@ table.compare tbody tr:last-child td { border-bottom: none; }
   .main-nav a { display: block; width: 100%; padding: 14px 0; border-bottom: 1px solid var(--border); }
   .main-nav a.nav-cta { text-align: center; margin-top: 10px; }
   .nav-toggle { display: block; }
-  .logo-link img { height: 16px; } /* match the hamburger icon (3 bars + 2 gaps = 16px) */
+  .logo-link img { height: 30px; }
 
   .hero-grid, .grid-2 { grid-template-columns: 1fr; }
   .hero-bg { height: 300px; }
